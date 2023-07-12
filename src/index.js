@@ -8,7 +8,7 @@ import './styles/menu.css';
 
 initialLoad();
 
-document.querySelector('.content').addEventListener('click', function (e) {
+document.addEventListener('click', function (e) {
 
     if (e.target.id == 'HOME') {
         cleanDOM();
