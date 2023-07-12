@@ -9,7 +9,7 @@ import './styles/menu.css';
 initialLoad();
 
 document.querySelector('.content').addEventListener('click', function (e) {
-    e.stopPropagation();
+
     if (e.target.id == 'HOME') {
         cleanDOM();
         homepage();
