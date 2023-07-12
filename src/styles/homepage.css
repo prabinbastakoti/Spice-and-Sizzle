@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    height: 23vh;
+    background-color: #FFD700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.heading img {
+    width: 350px;
+    cursor: pointer;
+    margin: 25px 0px 12px 0px;
+}
+
+.menus ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menus ul li {
+    list-style-type: none;
+    margin-right: 5px;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    padding: 5px 12px;
+    color: #000;
+    text-shadow: 0.8px 0 #000;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.menus ul li:hover {
+    transform: scaleX(1);
+    color: #FFD700;
+}
+
+
+.menus ul li::before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 0.4s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+.menus ul li:hover::before {
+    transition: transform 0.4s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.menus ul li.active {
+    background-color: #000;
+    color: #FFD700;
+    transform: none;
+}
+
+.container {
+    height: 77vh;
+    /* The image used */
+    background-color: #FFD700;
+
+    /* Full height */
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-heading {
+    font-size: 6rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.container-text {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: 35px auto 0px auto;
+    border: 2px solid #FFD700;
+    padding: 10px 20px;
+    background: transparent;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: #FFD700;
+    text-shadow: 0.8px 0 #FFD700;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: background .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+button:hover {
+    background-color: #FFD700;
+    color: black;
+    text-shadow: 0.8px 0 black;
+}
