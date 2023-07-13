@@ -23,7 +23,7 @@ const homepage = function() {
     const ul = document.createElement('ul');
 
 
-    const menuList = ['HOME', 'MENUS', 'CATERING', 'LOCATIONS', 'BBQ BOX', 'GIFT CARDS', 'ABOUT US'];
+    const menuList = ['HOME', 'MENUS','ABOUT US'];
 
     for (let i = 0; i < menuList.length; i++) {
         const li = document.createElement('li');

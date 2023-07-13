@@ -130,3 +130,9 @@ button:hover {
     color: black;
     text-shadow: 0.8px 0 black;
 }
+
+.footer {
+    height: 10vh;
+    background-color: #000;
+}
+
