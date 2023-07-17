@@ -12,10 +12,23 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
     "html-webpack-plugin": "^5.5.3",
+    "prettier": "3.0.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabinbastakoti/Spice-and-Sizzle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prabinbastakoti/Spice-and-Sizzle/issues"
+  },
+  "homepage": "https://github.com/prabinbastakoti/Spice-and-Sizzle#readme"
 }

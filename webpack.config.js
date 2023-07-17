@@ -1,25 +1,23 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-
   mode: "production",
 
   entry: {
-    bundle: path.resolve(__dirname, 'src/index.js'),
+    bundle: path.resolve(__dirname, "src/index.js"),
   },
 
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name][contenthash].js",
     clean: true,
-    assetModuleFilename: '[name][ext]',
+    assetModuleFilename: "[name][ext]",
   },
-  
-  devtool: 'inline-source-map',
 
-  devServer : {
-    
+  devtool: "inline-source-map",
+
+  devServer: {
     static: {
       directory: path.resolve(__dirname, "dist"),
     },
@@ -32,18 +30,17 @@ module.exports = {
     compress: true,
 
     historyApiFallback: true,
-
   },
 
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
     ],
   },
@@ -52,7 +49,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "SPICE & SIZZLE",
       filename: "index.html",
-      template: 'src/index.html',
-    })
+      template: "src/index.html",
+    }),
   ],
-}
+};

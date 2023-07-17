@@ -1,6 +1,6 @@
- const cleanDOM = () => {
-    const content = document.querySelector('.content');
-    content.innerHTML = "";
- }
+const cleanDOM = () => {
+  const content = document.querySelector(".content");
+  content.innerHTML = "";
+};
 
- export default cleanDOM;
+export default cleanDOM;
